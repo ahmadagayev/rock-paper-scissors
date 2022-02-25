@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,34 +13,26 @@
             display: none;
             list-style: none;
             padding-left: 0;
-
         }
-
         .box {
             height: 200px;
             padding: 10px;
             border: 2px solid black;
-
         }
-
         .custom-container {
             max-width: 960px;
             margin: 0 auto;
         }
-
         .send {
             width: 93%;
         }
-
         .main {
-            background-color: #7fbeff;
+            background-color: #7FBEFF;
         }
-
         .header {
-            background-color: #fffc9c;
+            background-color: #FFFC9C;
             padding: 25px 0;
         }
-
         #chat {
             background-color: #fff;
             color: #000;
@@ -51,32 +42,26 @@
             overflow-y: scroll;
             padding: 20px;
         }
+        #reclick{
+            display: none;
+            margin: 0 auto;
+        }
     </style>
-
-
 </head>
-
 <body>
-
     <div class="main">
-
-
         <div class="container">
-
             <div class="jumbotron text-center header">
                 <h2>Rock Paper Scissors</h2>
             </div>
-
             <div id="user">
-                <form class="text-center" action="">
+                <form class="text-center userForm" action="">
                     <input id="userName" placeholder="Name" type="text">
                     <button id="click">Start</button>
+                    <button class="text-center" id="reclick">Restart</button>
                 </form>
             </div>
-
-
             <div class="row my-5">
-
                 <div class="col-4">
                     <div class=" box text-center">
                         <h3 id="userName1">Waiting for Player 1</h3>
@@ -102,9 +87,7 @@
                     </div>
                 </div>
             </div>
-
             <div class="custom-container">
-
                 <div class="d-flex flex-column">
                     <div id="chat"></div>
                     <div>
@@ -119,7 +102,5 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="./game.mjs"></script>
-
 </body>
-
 </html>
